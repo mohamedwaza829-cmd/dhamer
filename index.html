@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhamer Skincare | Oceanic Beauty Science</title>
+    <meta
+      name="description"
+      content="A responsive luxury e-commerce product landing page for Dhamer oceanic skincare."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ocean: {
+                50: '#f4fbff',
+                100: '#e8f6ff',
+                200: '#cae8f8',
+                300: '#9fd2ec',
+                500: '#5d9eca',
+                700: '#315b7b'
+              },
+              ink: '#243044',
+              shell: '#fbfdff'
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'Georgia', 'serif'],
+              sans: ['Inter', 'ui-sans-serif', 'system-ui']
+            },
+            boxShadow: {
+              glow: '0 24px 80px rgba(93, 158, 202, 0.23)',
+              card: 'inset 0 1px 0 rgba(255,255,255,.85), 0 14px 45px rgba(82,119,148,.12)'
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-ocean-50 font-sans text-ink antialiased">
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+    <div class="page-shell mx-auto my-0 min-h-screen w-full max-w-[1720px] p-3 sm:p-5 lg:p-6">
+      <main id="mainContent" class="rounded-[2rem] border border-white/80 bg-white/62 p-3 shadow-glow backdrop-blur-xl sm:rounded-[3rem] sm:p-5">
+        <header class="site-header sticky top-3 z-40 rounded-full border border-white/75 bg-white/76 px-4 py-3 backdrop-blur-2xl transition-all duration-300 md:px-7">
+          <nav class="flex items-center justify-between gap-4" aria-label="Primary navigation">
+            <a href="#" class="flex items-center gap-3" aria-label="Dhamer home">
+              <span class="logo-mark" aria-hidden="true"></span>
+              <span class="font-serif text-2xl tracking-[0.12em] text-ink sm:text-3xl">DHAMER</span>
+            </a>
+
+            <button
+              class="menu-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-ocean-100 text-ink md:hidden"
+              type="button"
+              aria-controls="primary-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open menu</span>
+              <span class="hamburger"></span>
+            </button>
+
+            <div id="primary-menu" class="nav-menu hidden items-center gap-10 text-sm font-medium text-slate-600 md:flex">
+              <a class="nav-link" href="#categories">Shop <span aria-hidden="true">⌄</span></a>
+              <a class="nav-link" href="#series">Collections</a>
+              <a class="nav-link" href="#science">Science</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#journal">Journal</a>
+              <div class="mobile-menu-actions md:hidden">
+                <button type="button" data-open-search>Search products</button>
+                <button type="button" data-add-cart>Open ritual bag</button>
+              </div>
+            </div>
+
+            <div class="hidden items-center gap-4 md:flex">
+              <button class="icon-button" aria-label="Search products" data-open-search>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </button>
+              <button class="icon-button" aria-label="Account">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0m12-13a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </button>
+              <button class="cart-button" aria-label="Shopping cart">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 8h10l1 12H6L7 8Zm2 0a3 3 0 1 1 6 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span id="cartCount">0</span>
+              </button>
+            </div>
+          </nav>
+        </header>
+
+        <section class="hero relative mt-4 overflow-hidden rounded-[1.7rem] bg-ocean-200 px-5 pb-5 pt-10 sm:rounded-[2.3rem] sm:px-10 lg:min-h-[600px] lg:px-20 lg:py-16">
+          <div class="hero-water" aria-hidden="true"></div>
+          <div class="jelly jelly-one" aria-hidden="true"></div>
+          <div class="jelly jelly-two" aria-hidden="true"></div>
+          <div class="bubble-field" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="relative z-10 grid items-center gap-10 lg:grid-cols-[.88fr_1.12fr]">
+            <div class="max-w-2xl">
+              <div class="mb-6 inline-flex items-center rounded-full border border-white/70 bg-white/40 p-1 text-xs text-ocean-700 backdrop-blur">
+                <span class="rounded-full bg-ocean-500 px-4 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white">New</span>
+                <span class="px-3">Oceanic Skincare Science</span>
+              </div>
+              <h1 class="font-serif text-5xl leading-[.98] tracking-[-0.04em] text-slate-800 sm:text-6xl lg:text-8xl">
+                Luxury care for <span class="text-ocean-500">your skin,</span><br />where beauty begins
+              </h1>
+              <p class="mt-7 max-w-md text-base leading-7 text-slate-600 lg:text-lg">
+                Advanced OSM Skincare powered by oceanic bio-science. Pure. Potent. Proven.
+              </p>
+              <div class="mt-7 flex flex-wrap items-center gap-4">
+                <a href="#categories" class="primary-cta">Explore Collection <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="hero-products relative mx-auto flex min-h-[360px] w-full max-w-3xl items-end justify-center lg:min-h-[520px]">
+              <div class="shell shell-left" aria-hidden="true"></div>
+              <div class="shell shell-right" aria-hidden="true"></div>
+              <div class="ice-block" aria-hidden="true"></div>
+              <div class="bottle bottle-dropper large-bottle" aria-label="Dhamer OSM revive serum bottle"><span>DHAMER</span><small>OSM</small></div>
+              <div class="bottle pump-bottle" aria-label="Dhamer OSM hydrating lotion bottle"><span>DHAMER</span><small>OSM</small></div>
+              <div class="jar" aria-label="Dhamer OSM water bank gel cream"><span>DHAMER</span><small>OSM</small></div>
+            </div>
+          </div>
+
+          <div class="relative z-10 mt-8 grid gap-3 rounded-full lg:grid-cols-[repeat(4,1fr)_auto]">
+            <div class="benefit"><span>⌁</span><strong>Oceanic Bio-Science</strong><small>Deep Sea Actives</small></div>
+            <div class="benefit"><span>♧</span><strong>Clinically Proven</strong><small>Visible Results</small></div>
+            <div class="benefit"><span>♡</span><strong>Clean & Conscious</strong><small>Safe for You</small></div>
+            <div class="benefit"><span>✧</span><strong>Luxury Rituals</strong><small>Elevated Everyday</small></div>
+            <button class="science-button" type="button" data-open-science>
+              <span class="play-icon">▷</span>
+              <small>Discover<br />OSM Science</small>
+            </button>
+          </div>
+        </section>
+
+        <section id="categories" class="section-block">
+          <div class="section-heading">
+            <h2>Top Categories</h2>
+            <a href="#">View all categories <span>→</span></a>
+          </div>
+          <div class="product-grid" aria-label="Scrollable product categories">
+            <article class="product-card"><span class="rank">01</span><div class="mini-product tube"></div><strong>Cleanser</strong><p>OSM Marine Cleansing Foam</p><div><span>$48</span><button data-add-cart aria-label="Add cleanser to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">02</span><div class="mini-product tall"></div><strong>Toner</strong><p>OSM Hydrating Essence Toner</p><div><span>$52</span><button data-add-cart aria-label="Add toner to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">03</span><div class="mini-product dropper"></div><strong>Serum</strong><p>OSM Revive Elixir Serum</p><div><span>$128</span><button data-add-cart aria-label="Add serum to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">04</span><div class="mini-product slim"></div><strong>Essence</strong><p>OSM Activating Essence</p><div><span>$98</span><button data-add-cart aria-label="Add essence to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">05</span><div class="mini-product jar-mini"></div><strong>Eye Care</strong><p>OSM Brightening Eye Cream</p><div><span>$68</span><button data-add-cart aria-label="Add eye cream to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">06</span><div class="mini-product cream"></div><strong>Moisturizer</strong><p>OSM Water Bank Gel Cream</p><div><span>$68</span><button data-add-cart aria-label="Add moisturizer to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">07</span><div class="mini-product mask"></div><strong>Mask</strong><p>OSM Bio-Cellulose Treatment Mask</p><div><span>$16</span><button data-add-cart aria-label="Add mask to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">08</span><div class="mini-product sunscreen"></div><strong>Sun Care</strong><p>OSM UV Shield Sunscreen SPF50</p><div><span>$58</span><button data-add-cart aria-label="Add sunscreen to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">09</span><div class="mini-product ampoule"></div><strong>Ampoule</strong><p>OSM Deep Sea Ampoule</p><div><span>$78</span><button data-add-cart aria-label="Add ampoule to cart">⌂</button></div></article>
+            <article class="product-card"><span class="rank">10</span><div class="mini-product mist"></div><strong>Mist</strong><p>OSM Mineral Misting Spray</p><div><span>$42</span><button data-add-cart aria-label="Add mist to cart">⌂</button></div></article>
+          </div>
+        </section>
+
+        <section id="series" class="section-block">
+          <div class="section-heading"><h2>Explore Our Series</h2></div>
+          <div class="series-grid">
+            <article class="series-card revive"><span>Bestseller</span><h3>OSM Revive<br />Collection</h3><p>Renew. Revive. Radiate. For luminous, youthful skin.</p><div class="series-product trio" aria-hidden="true"></div><a href="#">Discover Series →</a></article>
+            <article class="series-card hydra"><span>New</span><h3>OSM Hydra<br />Collection</h3><p>Deep ocean hydration for every skin.</p><div class="series-product duo" aria-hidden="true"></div><a href="#">Discover Series →</a></article>
+            <article class="series-card radiance"><span>Exclusive</span><h3>OSM Radiance<br />Collection</h3><p>Brighten. Even. Glow. Reveal your natural light.</p><div class="series-product family" aria-hidden="true"></div><a href="#">Discover Series →</a></article>
+          </div>
+        </section>
+
+        <section id="journal" class="section-block">
+          <div class="section-heading">
+            <h2>From Our Journal</h2>
+            <a href="#">View all articles <span>→</span></a>
+          </div>
+          <div class="journal-grid">
+            <article class="journal-card"><div class="journal-image science-img"><span>Science</span></div><div><time>May 20, 2024</time><h3>The Power of Oceanic Minerals in Skin Renewal</h3><p>Discover how deep-sea minerals help strengthen, detox, and rejuvenate skin.</p><a href="#">Read More →</a></div></article>
+            <article class="journal-card"><div class="journal-image ritual-img"></div><div><time>May 10, 2024</time><h3>Your Daily Ritual for Lasting Glow</h3><p>Simple steps, powerful results. Elevate your skincare ritual.</p><a href="#">Read More →</a></div></article>
+            <article class="journal-card"><div class="journal-image ingredient-img"><span>Ingredients</span></div><div><time>Apr 28, 2024</time><h3>Why OSM Complex Changes Everything</h3><p>The science behind our exclusive Oceanic Skin Matrix.</p><a href="#">Read More →</a></div></article>
+          </div>
+        </section>
+
+        <section class="promise-strip" aria-label="Shopping benefits">
+          <div><span>♧</span><strong>Free Worldwide Shipping</strong><small>On orders over $100</small></div>
+          <div><span>❉</span><strong>Luxury Samples</strong><small>With every order</small></div>
+          <div><span>▧</span><strong>Secure & Easy Payments</strong><small>Multiple safe options</small></div>
+          <div><span>♕</span><strong>Rewards & Benefits</strong><small>Exclusive member perks</small></div>
+          <div><span>☊</span><strong>Expert Support</strong><small>We're here for you</small></div>
+        </section>
+
+        <footer id="about" class="footer-grid rounded-b-[2rem] px-5 py-10 sm:px-7 lg:px-8">
+          <div class="brand-column">
+            <span class="logo-mark large" aria-hidden="true"></span>
+            <h2 class="font-serif text-3xl tracking-[0.14em]">DHAMER</h2>
+            <p>Oceanic science.<br />Timeless beauty.</p>
+            <small>© 2024 Dhamer Skincare. All rights reserved.</small>
+          </div>
+          <div><h3>Shop</h3><a href="#">All Products</a><a href="#">Best Sellers</a><a href="#">New Arrivals</a><a href="#">Gift Sets</a></div>
+          <div><h3>Collections</h3><a href="#">OSM Revive</a><a href="#">OSM Hydra</a><a href="#">OSM Radiance</a><a href="#">All Collections</a></div>
+          <div><h3>Customer Care</h3><a href="#">FAQ</a><a href="#">Shipping & Delivery</a><a href="#">Returns & Refunds</a><a href="#">Contact Us</a></div>
+          <div><h3>About</h3><a href="#">Our Story</a><a href="#" id="science">Our Science</a><a href="#">Sustainability</a><a href="#">Careers</a></div>
+          <div class="newsletter"><h3>Stay in the glow</h3><p>Be the first to discover new rituals, offers, and oceanic skincare secrets.</p><form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required /><button type="submit" aria-label="Subscribe">↗</button></form><div class="socials"><a href="#">◎</a><a href="#">f</a><a href="#">p</a><a href="#">▶</a><a href="#">♪</a></div><div class="legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div></div>
+        </footer>
+      </main>
+    </div>
+
+    <div id="searchPanel" class="search-panel" aria-hidden="true">
+      <div class="search-box">
+        <button data-close-search aria-label="Close search">×</button>
+        <h2 class="font-serif">Search Dhamer</h2>
+        <input type="search" placeholder="Try serum, mask, hydra..." />
+      </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
